@@ -12,7 +12,7 @@ spec:
         command: [ "sh", "-c"]
         args:
         -  while true; do
-            echo -en '\n';
+            echo -en 'PI decimals: {{ .Var.piplaces }}\n';
             printenv MY_NODE_NAME MY_POD_NAME MY_POD_NAMESPACE;
             printenv MY_POD_IP MY_POD_SERVICE_ACCOUNT;
             sleep 300;
