@@ -8,4 +8,6 @@ namespace: fleet-helm-example
 # Custom helm options
 helm:
   # Number of PI decimals to be calculated
-  piplaces: 200
+  values:
+    piplaces: 200
+
