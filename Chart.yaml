@@ -1,0 +1,6 @@
+
+apiVersion: v2
+name: picalculator
+description: Sample application to calculate PI
+version: 0.0.0
+appVersion: 0.0.0
