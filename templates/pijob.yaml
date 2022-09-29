@@ -5,6 +5,7 @@ metadata:
 spec:
   template:
     spec:
+      restartPolicy: never
       containers:
       - name: app-dog
         image: k8s.gcr.io/busybox
