@@ -1,0 +1,11 @@
+
+# This file and all contents in it are OPTIONAL.
+
+# The namespace this chart will be installed and restricted to,
+# if not specified the chart will be installed to "default"
+namespace: fleet-helm-example
+
+# Custom helm options
+helm:
+  # Number of PI decimals to be calculated
+  piplaces: 200
