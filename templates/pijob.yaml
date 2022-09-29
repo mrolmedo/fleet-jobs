@@ -3,6 +3,11 @@ kind: Job
 metadata:
   name: pi
 spec:
+  #As Kubernetes Jobs are immutable and the template can't be changed once created
+  #we can use ttlSecondsAfterFinished to clean them once execute so that our CD can redeploy/run them
+  #again in case they are changed. This is a new feature in k8s 1.23.
+  #If the value is 0 seconds the Job is inmmediatly deleted after execution.
+  #If the fiedl is unset the Job will behave as normal and won't be delete automatically after execution.
   ttlSecondsAfterFinished: 100
   template:
     spec:
