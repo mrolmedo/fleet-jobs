@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: pi
+  name: pi2
 spec:
   #As Kubernetes Jobs are immutable and the template can't be changed once created
   #we can use ttlSecondsAfterFinished to clean them once execute so that our CD can redeploy/run them
