@@ -13,7 +13,7 @@ spec:
     spec:
       restartPolicy: Never
       containers:
-      - name: app-dogtest03
+      - name: app-dogtest03test03
         image: k8s.gcr.io/busybox
         command: [ "sh", "-c"]
         args: ["while  true; do echo -en 'PI decimals: {{ .Values.piplaces }}.\n'; printenv MY_NODE_NAME MY_POD_NAME MY_POD_NAMESPACE; sleep 70;  break;       done; "]
