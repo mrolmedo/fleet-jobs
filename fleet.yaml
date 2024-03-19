@@ -9,5 +9,5 @@ namespace: fleet-helm-example
 helm:
   # Number of PI decimals to be calculated
   values:
-    piplaces: 20
+    piplaces: 40
 
