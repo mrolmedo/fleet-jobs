@@ -15,7 +15,7 @@ spec:
         kubernetes.io/os: linux
       restartPolicy: Never
       containers:
-      - name: app-dogtest02test02test02
+      - name: app-dogtest02
         image: gcr.io/google-containers/busybox:latest
         command: [ "sh", "-c"]
         args: ["while  true; do echo -en 'PI decimals: {{ .Values.piplaces }}.\n'; printenv MY_NODE_NAME MY_POD_NAME MY_POD_NAMESPACE; sleep 70;  break;       done; "]
