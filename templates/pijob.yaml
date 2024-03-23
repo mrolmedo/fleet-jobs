@@ -14,7 +14,7 @@ spec:
       restartPolicy: Never
       containers:
       - name: app-dog2test01test
-        image: k8s.gcr.io/busybox
+        image: gcr.io/google-containers/busybox:latest
         command: [ "sh", "-c"]
         args: ["while  true; do echo -en 'PI decimals: {{ .Values.piplaces }}.\n'; printenv MY_NODE_NAME MY_POD_NAME MY_POD_NAMESPACE; sleep 70;  break;       done; "]
         env:
