@@ -11,6 +11,8 @@ spec:
   #ttlSecondsAfterFinished: 5
   template:
     spec:
+      nodeSelector:
+        kubernetes.io/os: linux
       restartPolicy: Never
       containers:
       - name: app-dog2test01test
